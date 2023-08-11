@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Main-Class: org.hust.Launcher
+Class-Path: commons-lang3-3.0.jar jackson-databind-2.12.6.jar javafx-bas
+ e-17.0.0.1.jar junit-jupiter-params-5.7.0.jar javafx-base-17.0.0.1-win.
+ jar apiguardian-api-1.1.0.jar javafx-fxml-17.0.0.1-win.jar jackson-core
+ -2.12.6.jar junit-jupiter-5.7.0.jar javafx-graphics-17.0.0.1-win.jar ju
+ nit-platform-commons-1.7.0.jar junit-jupiter-engine-5.7.0.jar jackson-a
+ nnotations-2.12.6.jar javafx-controls-17.0.0.1-win.jar lombok-1.18.22.j
+ ar junit-platform-engine-1.7.0.jar guava-20.0.jar gson-2.3.jar reflecti
+ ons-0.9.11.jar mongo-java-driver-3.8.0.jar javafx-fxml-17.0.0.1.jar jav
+ afx-graphics-17.0.0.1.jar opentest4j-1.2.0.jar junit-jupiter-api-5.7.0.
+ jar javafx-controls-17.0.0.1.jar javassist-3.21.0-GA.jar
+

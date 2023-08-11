@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="768.0" prefWidth="1366.0">
+         <children>
+            <HBox alignment="CENTER" maxHeight="120.0" maxWidth="1366.0" spacing="200.0">
+               <children>
+                  <ImageView fitHeight="86.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/logo.png" />
+                     </image>
+                  </ImageView>
+                  <HBox alignment="CENTER" prefHeight="120.0" spacing="20.0">
+                     <children>
+                        <TextField fx:id="searchTextField" prefWidth="250.0" promptText="Search for stations around you">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="searchButton" mnemonicParsing="false" text="Search">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <ButtonBar prefWidth="300.0">
+                    <buttons>
+                        <VBox fx:id="nowButton" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-cursor: hand;">
+                           <children>
+                              <ImageView fitHeight="77.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/InRent.png" />
+                                 </image>
+                              </ImageView>
+                              <Label text="Now">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox fx:id="scanButton" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-cursor: hand;">
+                           <children>
+                              <ImageView fitHeight="77.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/Barcode.png" />
+                                 </image>
+                              </ImageView>
+                              <Label text="Scan">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox fx:id="priceButton" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-cursor: hand;">
+                           <children>
+                              <ImageView fitHeight="77.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/Pricing.png" />
+                                 </image>
+                              </ImageView>
+                              <Label text="Price">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox fx:id="historyButton" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-cursor: hand;">
+                           <children>
+                              <ImageView fitHeight="77.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/History.png" />
+                                 </image>
+                              </ImageView>
+                              <Label text="History">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                    </buttons>
+                  </ButtonBar>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="100.0" right="100.0" top="20.0" />
+               </padding>
+            </HBox>
+            <HBox fx:id="mainHBox" alignment="TOP_CENTER" prefHeight="600.0" prefWidth="1366.0" spacing="100.0">
+               <children>
+                  <VBox>
+                     <children>
+                        <Label fx:id="titleLabel" text="Welcome back!" wrapText="true">
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.8392156958580017" green="0.9843137264251709" blue="0.545098066329956" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.5082417582417584">
+                                       <color>
+                                          <Color red="0.3019607961177826" green="0.9019607901573181" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color green="0.800000011920929" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                           <font>
+                              <Font name="System Bold" size="64.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="subtitleLabel" layoutX="10.0" layoutY="271.0" text="Stations around you:" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="36.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="smallTextLabel" style="-fx-text-fill: gray;" wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <ScrollPane fx:id="infoScrollPane" hbarPolicy="NEVER" prefWidth="500.0" style="-fx-background: white; -fx-background-color: white;" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </ScrollPane>
+                        <ButtonBar fx:id="buttonGroup">
+                          <buttons>
+                            <Button fx:id="secondaryButton" mnemonicParsing="false" style="-fx-background-color: #E9E9E9; -fx-cursor: hand;" text="Scan barcode">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="primaryButton" defaultButton="true" mnemonicParsing="false" style="-fx-background-color: #2ECC71; -fx-cursor: hand;" text="View station info" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Button>
+                          </buttons>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </ButtonBar>
+                     </children>
+                  </VBox>
+                  <ImageView fx:id="image" fitHeight="561.0" fitWidth="556.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/map.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
